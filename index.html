@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data-Zen | Data Engineering, Replication, and Performance Consulting</title>
-  <meta name="description" content="Data-Zen helps companies solve complex data engineering problems, optimize database performance, modernize data platforms, and build reliable analytics systems.">
+  <title>Data-Zen | Data Engineering & Snowflake Consulting</title>
+  <meta name="description" content="Data-Zen solves complex data engineering problems — Snowflake architecture, SQL Server replication, performance tuning, and analytics infrastructure.">
   <meta name="author" content="Data-Zen">
-  <meta name="theme-color" content="#071425">
-  <meta property="og:title" content="Data-Zen | Data Engineering and Technology Consulting">
-  <meta property="og:description" content="Senior data engineering, database performance, integration, replication, and platform modernization consulting.">
+  <meta name="theme-color" content="#050d1c">
+  <meta property="og:title" content="Data-Zen | Data Engineering & Snowflake Consulting">
+  <meta property="og:description" content="Senior data engineering, Snowflake architecture, replication, performance, and platform modernization.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://data-zen.com/">
   <meta property="og:image" content="https://data-zen.com/social-card.svg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://data-zen.com/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preload" href="styles.css" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -25,14 +27,12 @@
   <header class="site-header" data-header>
     <nav class="nav shell" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Data-Zen home">
-        <img src="logo.svg" alt="" width="42" height="42">
+        <img src="logo.svg" alt="" width="38" height="38">
         <span>Data-Zen</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
       <div class="nav-links" data-nav-links>
@@ -46,184 +46,221 @@
   </header>
 
   <main id="main">
-    <section class="hero section" id="top" aria-labelledby="hero-title">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Data engineering, database performance, and platform modernization</p>
-          <h1 id="hero-title">Complex data problems, solved with senior engineering precision.</h1>
-          <p class="hero-text">Data-Zen helps companies integrate critical systems, improve data reliability, tune high-volume platforms, and build durable analytics infrastructure that leadership can trust.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Schedule a consultation</a>
-            <a class="button button-secondary" href="#services">Explore services</a>
-          </div>
-          <div class="trust-row" aria-label="Core specialties">
-            <span>Snowflake</span>
-            <span>SQL Server</span>
-            <span>Azure</span>
-            <span>Replication</span>
-            <span>Performance</span>
-          </div>
-        </div>
 
-        <div class="hero-panel" aria-label="Data-Zen operating model">
-          <div class="signal-card signal-card-main">
-            <div>
-              <span class="status-dot"></span>
-              <span class="card-label">Operational focus</span>
-            </div>
-            <strong>Reliable, fast, auditable data systems</strong>
+    <!-- ── HERO ────────────────────────────────────────────── -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+      </div>
+      <div class="shell hero-inner">
+        <div class="hero-tag reveal">
+          <span class="tag-dot"></span>
+          Data Engineering &middot; Snowflake &middot; Performance Optimization
+        </div>
+        <h1 id="hero-title" class="reveal">
+          Complex data problems,<br>
+          <em>solved with precision.</em>
+        </h1>
+        <p class="hero-sub reveal">
+          Data-Zen helps companies integrate critical systems, improve data reliability, tune high-volume platforms, and build durable analytics infrastructure that leadership can trust.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#contact">Schedule a consultation</a>
+          <a class="btn btn-ghost" href="#services">Explore services</a>
+        </div>
+        <div class="hero-metrics reveal" aria-label="Core capabilities">
+          <div class="hero-metric">
+            <span class="metric-num">01</span>
+            <strong>Integrate</strong>
+            <p>Unify fragmented data sources into clean, usable pipelines.</p>
           </div>
-          <div class="metric-grid">
-            <div class="metric-card">
-              <span>01</span>
-              <strong>Integrate</strong>
-              <p>Unify fragmented data sources into clean, usable pipelines.</p>
-            </div>
-            <div class="metric-card">
-              <span>02</span>
-              <strong>Optimize</strong>
-              <p>Improve query performance, compute cost, and system throughput.</p>
-            </div>
-            <div class="metric-card">
-              <span>03</span>
-              <strong>Monitor</strong>
-              <p>Surface data freshness, quality, failures, and SLA risks early.</p>
-            </div>
-            <div class="metric-card">
-              <span>04</span>
-              <strong>Scale</strong>
-              <p>Design platforms that hold up as data volume and complexity grow.</p>
-            </div>
+          <div class="hero-metric">
+            <span class="metric-num">02</span>
+            <strong>Optimize</strong>
+            <p>Improve query performance, compute cost, and throughput.</p>
+          </div>
+          <div class="hero-metric">
+            <span class="metric-num">03</span>
+            <strong>Monitor</strong>
+            <p>Surface freshness, quality, and SLA risks before they escalate.</p>
+          </div>
+          <div class="hero-metric">
+            <span class="metric-num">04</span>
+            <strong>Scale</strong>
+            <p>Platforms that hold up as data volume and complexity grow.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-light" id="services" aria-labelledby="services-title">
+    <!-- ── SERVICES ──────────────────────────────────────── -->
+    <section class="section" id="services" aria-labelledby="services-title">
       <div class="shell">
-        <div class="section-heading">
+        <div class="section-head reveal">
           <p class="eyebrow">Services</p>
-          <h2 id="services-title">Senior data help without the overhead of building a full internal team.</h2>
-          <p>We focus on practical, high-impact engineering work: the kind that removes bottlenecks, makes reporting trustworthy, and keeps business-critical systems moving.</p>
+          <h2 id="services-title">Senior data help, without the overhead.</h2>
+          <p class="section-desc">Practical, high-impact engineering — the kind that removes bottlenecks, makes reporting trustworthy, and keeps business-critical systems moving reliably.</p>
         </div>
-
-        <div class="card-grid four-columns">
-          <article class="service-card">
-            <div class="icon-wrap">↔</div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="svc-num">01</div>
+            <div class="svc-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg>
+            </div>
             <h3>Data Integration</h3>
             <p>Connect disparate systems, reconcile information silos, and create reliable data flows from source systems into analytics platforms.</p>
           </article>
-
-          <article class="service-card">
-            <div class="icon-wrap">▦</div>
-            <h3>Modeling and Architecture</h3>
+          <article class="service-card reveal">
+            <div class="svc-num">02</div>
+            <div class="svc-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3>Modeling &amp; Architecture</h3>
             <p>Design scalable warehouse models, dimensional structures, and platform patterns for high-volume, business-critical analytics.</p>
           </article>
-
-          <article class="service-card">
-            <div class="icon-wrap">⚡</div>
+          <article class="service-card reveal">
+            <div class="svc-num">03</div>
+            <div class="svc-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
             <h3>Performance Optimization</h3>
-            <p>Tune SQL, reduce compute waste, improve load patterns, and eliminate slow-running queries that hold teams back.</p>
+            <p>Tune SQL, reduce compute waste, improve load patterns, and eliminate slow-running queries that hold teams back from moving fast.</p>
           </article>
-
-          <article class="service-card">
-            <div class="icon-wrap">◌</div>
-            <h3>Administration and Support</h3>
+          <article class="service-card reveal">
+            <div class="svc-num">04</div>
+            <div class="svc-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Administration &amp; Support</h3>
             <p>Keep platforms healthy with proactive monitoring, operational runbooks, issue triage, and senior-level technical support.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="outcomes" aria-labelledby="outcomes-title">
-      <div class="shell split-grid">
-        <div>
-          <p class="eyebrow">Why Data-Zen</p>
-          <h2 id="outcomes-title">Built for teams that need answers, not excuses.</h2>
-          <p class="section-intro">Data platforms usually fail in the seams: hidden data quality issues, slow jobs, unclear ownership, brittle pipelines, and runaway compute. We make the seams visible, measurable, and fixable.</p>
-          <a class="inline-link" href="#contact">Talk through your current data problem</a>
-        </div>
-
-        <div class="outcome-list">
-          <div class="outcome-item">
-            <span>01</span>
-            <div>
-              <h3>Deep technical ownership</h3>
-              <p>Senior engineers who can trace issues from raw source data through transformation, loading, reporting, and production operations.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span>02</span>
-            <div>
-              <h3>Fast diagnosis</h3>
-              <p>We look for the actual failure point: permissions, caching, orchestration, data shape, SQL logic, rendering, or infrastructure.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span>03</span>
-            <div>
-              <h3>Clear delivery</h3>
-              <p>Practical implementation, direct communication, and systems that are documented well enough for your team to operate.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span>04</span>
-            <div>
-              <h3>Cost-aware engineering</h3>
-              <p>Performance work is not just about speed. It is also about lowering waste, simplifying operations, and reducing recurring cost.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="technology" aria-labelledby="technology-title">
-      <div class="shell technology-grid">
-        <div>
-          <p class="eyebrow eyebrow-on-dark">Technology</p>
-          <h2 id="technology-title">Modern data systems need monitoring, observability, and discipline.</h2>
-          <p>We help teams build data platforms that are measurable from end to end, with clear checks for freshness, accuracy, failures, and performance drift.</p>
-        </div>
-
-        <div class="tech-panel">
-          <div class="tech-stat">
-            <strong>24/7</strong>
-            <span>monitoring mindset</span>
-          </div>
-          <div class="tech-stat">
-            <strong>SQL-first</strong>
-            <span>clear, inspectable logic</span>
-          </div>
-          <div class="tech-stat">
-            <strong>Cloud-ready</strong>
-            <span>Snowflake, Azure, and modern ELT</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="shell stack-list" aria-label="Representative technology stack">
-        <span>Snowflake</span>
-        <span>SQL Server</span>
-        <span>Azure</span>
-        <span>Python</span>
-        <span>Streamlit</span>
-        <span>Fivetran</span>
-        <span>BCP</span>
-        <span>Power BI</span>
-        <span>Data Quality</span>
-        <span>SCD2</span>
-      </div>
-    </section>
-
-    <section class="section section-light" id="engagements" aria-labelledby="engagements-title">
+    <!-- ── OUTCOMES ──────────────────────────────────────── -->
+    <section class="section section-dark" id="outcomes" aria-labelledby="outcomes-title">
       <div class="shell">
-        <div class="section-heading compact">
-          <p class="eyebrow">Engagements</p>
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-inv">Why Data-Zen</p>
+          <h2 id="outcomes-title">Built for teams that need answers, not excuses.</h2>
+          <p class="section-desc section-desc-inv">Data platforms usually fail in the seams: hidden quality issues, slow jobs, unclear ownership, brittle pipelines, and runaway compute costs. We make the seams visible, measurable, and fixable.</p>
+        </div>
+        <div class="outcomes-grid">
+          <div class="outcome-card reveal">
+            <span class="outcome-num">01</span>
+            <h3>Deep technical ownership</h3>
+            <p>Senior engineers who can trace issues from raw source data through transformation, loading, reporting, and production operations.</p>
+          </div>
+          <div class="outcome-card reveal">
+            <span class="outcome-num">02</span>
+            <h3>Fast diagnosis</h3>
+            <p>We identify the actual failure point: permissions, caching, orchestration, data shape, SQL logic, rendering, or infrastructure.</p>
+          </div>
+          <div class="outcome-card reveal">
+            <span class="outcome-num">03</span>
+            <h3>Clear delivery</h3>
+            <p>Practical implementation, direct communication, and systems documented well enough for your team to operate independently.</p>
+          </div>
+          <div class="outcome-card reveal">
+            <span class="outcome-num">04</span>
+            <h3>Cost-aware engineering</h3>
+            <p>Performance work is not just about speed. It is also about lowering waste, simplifying operations, and reducing recurring cost.</p>
+          </div>
+        </div>
+        <div class="outcomes-cta reveal">
+          <a class="btn btn-outline-inv" href="#contact">Talk through your data problem</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TECHNOLOGY ─────────────────────────────────────── -->
+    <section class="section" id="technology" aria-labelledby="technology-title">
+      <div class="shell tech-split">
+        <div class="tech-copy">
+          <div class="reveal">
+            <p class="eyebrow">Technology</p>
+            <h2 id="technology-title">Modern data platforms need monitoring, observability, and discipline.</h2>
+            <p class="section-desc">We help teams build platforms that are measurable end to end, with clear checks for freshness, accuracy, failures, and performance drift.</p>
+          </div>
+          <div class="tech-stats">
+            <div class="tech-stat reveal">
+              <strong>SQL-first</strong>
+              <span>Clear, inspectable logic your team can maintain</span>
+            </div>
+            <div class="tech-stat reveal">
+              <strong>Cloud-native</strong>
+              <span>Snowflake, Azure, and modern ELT patterns</span>
+            </div>
+            <div class="tech-stat reveal">
+              <strong>Always on</strong>
+              <span>Monitoring mindset baked into every build</span>
+            </div>
+          </div>
+        </div>
+        <div class="tech-visual reveal" aria-hidden="true">
+          <div class="sf-badge">
+            <div class="sf-ring sf-ring-1"></div>
+            <div class="sf-ring sf-ring-2"></div>
+            <div class="sf-ring sf-ring-3"></div>
+            <div class="sf-core">
+              <svg width="48" height="48" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 4L26 48M4 26L48 26M9 9L43 43M43 9L9 43" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="26" cy="26" r="5" fill="currentColor"/>
+                <circle cx="26" cy="4" r="2.5" fill="currentColor"/>
+                <circle cx="26" cy="48" r="2.5" fill="currentColor"/>
+                <circle cx="4" cy="26" r="2.5" fill="currentColor"/>
+                <circle cx="48" cy="26" r="2.5" fill="currentColor"/>
+                <circle cx="9" cy="9" r="2.5" fill="currentColor"/>
+                <circle cx="43" cy="43" r="2.5" fill="currentColor"/>
+                <circle cx="43" cy="9" r="2.5" fill="currentColor"/>
+                <circle cx="9" cy="43" r="2.5" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stack-ticker-wrap" aria-label="Technology stack">
+        <div class="ticker-track" role="list">
+          <span role="listitem">Snowflake</span>
+          <span role="listitem">SQL Server</span>
+          <span role="listitem">Azure</span>
+          <span role="listitem">Python</span>
+          <span role="listitem">Streamlit</span>
+          <span role="listitem">Fivetran</span>
+          <span role="listitem">Power BI</span>
+          <span role="listitem">SCD2 Replication</span>
+          <span role="listitem">Data Quality</span>
+          <span role="listitem">BCP</span>
+          <span role="listitem">ELT Pipelines</span>
+          <span role="listitem">dbt</span>
+          <!-- duplicate for seamless loop -->
+          <span aria-hidden="true">Snowflake</span>
+          <span aria-hidden="true">SQL Server</span>
+          <span aria-hidden="true">Azure</span>
+          <span aria-hidden="true">Python</span>
+          <span aria-hidden="true">Streamlit</span>
+          <span aria-hidden="true">Fivetran</span>
+          <span aria-hidden="true">Power BI</span>
+          <span aria-hidden="true">SCD2 Replication</span>
+          <span aria-hidden="true">Data Quality</span>
+          <span aria-hidden="true">BCP</span>
+          <span aria-hidden="true">ELT Pipelines</span>
+          <span aria-hidden="true">dbt</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ENGAGEMENTS ────────────────────────────────────── -->
+    <section class="section section-dark" id="engagements" aria-labelledby="engagements-title">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-inv">Engagements</p>
           <h2 id="engagements-title">Flexible help for the work that matters most.</h2>
         </div>
-
-        <div class="card-grid three-columns">
-          <article class="plan-card">
+        <div class="plans-grid">
+          <article class="plan-card reveal">
             <p class="plan-kicker">Operational support</p>
             <h3>Remote Administration</h3>
             <p>Ongoing support for data platforms, production processes, monitoring, troubleshooting, and performance stability.</p>
@@ -233,8 +270,7 @@
               <li>Failure triage and resolution</li>
             </ul>
           </article>
-
-          <article class="plan-card featured-card">
+          <article class="plan-card plan-featured reveal">
             <p class="plan-kicker">Most common</p>
             <h3>Data Engineering Services</h3>
             <p>Senior engineering capacity for pipelines, replication, modeling, SQL tuning, automation, data quality, and analytics enablement.</p>
@@ -244,8 +280,7 @@
               <li>Performance and cost optimization</li>
             </ul>
           </article>
-
-          <article class="plan-card">
+          <article class="plan-card reveal">
             <p class="plan-kicker">Team extension</p>
             <h3>Technology Team Augmentation</h3>
             <p>Specialized engineering support for teams that need senior execution without adding permanent headcount.</p>
@@ -259,54 +294,63 @@
       </div>
     </section>
 
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
       <div class="shell contact-grid">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Bring us the messy data problem.</h2>
-          <p class="section-intro">Tell us what is slow, broken, unreliable, expensive, or hard to explain. We will help you figure out the cleanest path forward.</p>
-          <div class="contact-methods">
-            <a href="mailto:information@data-zen.com?subject=Data-Zen%20consultation%20request">information@data-zen.com</a>
-            <a href="https://www.linkedin.com/in/paulkats" rel="noopener noreferrer" target="_blank">Connect on LinkedIn</a>
+        <div class="contact-copy">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Bring us the messy data problem.</h2>
+            <p class="section-desc">Tell us what is slow, broken, unreliable, expensive, or hard to explain. We will help you figure out the cleanest path forward.</p>
+          </div>
+          <div class="contact-links reveal">
+            <a href="mailto:information@data-zen.com?subject=Data-Zen%20consultation%20request" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              information@data-zen.com
+            </a>
+            <a href="https://www.linkedin.com/in/paulkats" rel="noopener noreferrer" target="_blank" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
-
-        <form class="contact-form" data-contact-form>
+        <form class="contact-form reveal" data-contact-form novalidate>
           <div class="form-row">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
           </div>
           <div class="form-row">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
           </div>
           <div class="form-row">
             <label for="message">What can we help with?</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your data challenge..." required></textarea>
           </div>
-          <button class="button button-primary" type="submit">Create email</button>
-          <p class="form-note">This opens your email client with the message pre-filled. No server-side form service is required.</p>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-note">Opens your email client with the message pre-filled. No server required.</p>
         </form>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#top" aria-label="Data-Zen home">
-          <img src="logo.svg" alt="" width="36" height="36">
+    <div class="shell footer-inner">
+      <div class="footer-brand-block">
+        <a class="brand" href="#top" aria-label="Data-Zen home">
+          <img src="logo.svg" alt="" width="32" height="32">
           <span>Data-Zen</span>
         </a>
         <p>Data engineering and technology consulting for complex, high-value systems.</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="#services">Services</a>
         <a href="#outcomes">Outcomes</a>
         <a href="#technology">Technology</a>
         <a href="#contact">Contact</a>
-      </div>
-      <p class="copyright">© <span data-year></span> Data-Zen. All rights reserved.</p>
+      </nav>
+      <p class="footer-copy">&copy; <span data-year></span> Data-Zen. All rights reserved.</p>
     </div>
   </footer>
 </body>
