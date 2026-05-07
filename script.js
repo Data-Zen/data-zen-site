@@ -58,13 +58,13 @@
     sections.forEach(s => navObserver.observe(s));
   }
 
-  // ── Scroll reveal with stagger ────────────────────────────
+  // ── Scroll reveal with per-group stagger ─────────────────
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         const el = entry.target;
-        // Stagger items that share the same direct parent
+        // Stagger only direct .reveal siblings in the same parent
         const siblings = Array.from(el.parentElement.querySelectorAll(':scope > .reveal'));
         const idx = siblings.indexOf(el);
         el.style.transitionDelay = idx > 0 ? (idx * 70) + 'ms' : '0ms';
@@ -86,16 +86,16 @@
       e.preventDefault();
       const fd      = new FormData(form);
       const name    = String(fd.get('name')    || '').trim();
+      const company = String(fd.get('company') || '').trim();
       const email   = String(fd.get('email')   || '').trim();
       const message = String(fd.get('message') || '').trim();
+
       const subject = encodeURIComponent('Data-Zen consultation request');
-      const body    = encodeURIComponent([
-        'Name: '    + name,
-        'Email: '   + email,
-        '',
-        'Message:',
-        message
-      ].join('\n'));
+      const bodyLines = ['Name: ' + name];
+      if (company) bodyLines.push('Company: ' + company);
+      bodyLines.push('Email: ' + email, '', 'Message:', message);
+      const body = encodeURIComponent(bodyLines.join('\n'));
+
       window.location.href = 'mailto:information@data-zen.com?subject=' + subject + '&body=' + body;
     });
   }
