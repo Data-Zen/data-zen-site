@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data-Zen | Data Engineering, Replication, and Performance Consulting</title>
+  <meta name="description" content="Data-Zen helps companies solve complex data engineering problems, optimize database performance, modernize data platforms, and build reliable analytics systems.">
+  <meta name="author" content="Data-Zen">
+  <meta name="theme-color" content="#071425">
+  <meta property="og:title" content="Data-Zen | Data Engineering and Technology Consulting">
+  <meta property="og:description" content="Senior data engineering, database performance, integration, replication, and platform modernization consulting.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://data-zen.com/">
+  <meta property="og:image" content="https://data-zen.com/assets/social-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://data-zen.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Data-Zen home">
+        <img src="assets/logo.svg" alt="" width="42" height="42">
+        <span>Data-Zen</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#services">Services</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#technology">Technology</a>
+        <a href="#engagements">Engagements</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Data engineering, database performance, and platform modernization</p>
+          <h1 id="hero-title">Complex data problems, solved with senior engineering precision.</h1>
+          <p class="hero-text">Data-Zen helps companies integrate critical systems, improve data reliability, tune high-volume platforms, and build durable analytics infrastructure that leadership can trust.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Schedule a consultation</a>
+            <a class="button button-secondary" href="#services">Explore services</a>
+          </div>
+          <div class="trust-row" aria-label="Core specialties">
+            <span>Snowflake</span>
+            <span>SQL Server</span>
+            <span>Azure</span>
+            <span>Replication</span>
+            <span>Performance</span>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Data-Zen operating model">
+          <div class="signal-card signal-card-main">
+            <div>
+              <span class="status-dot"></span>
+              <span class="card-label">Operational focus</span>
+            </div>
+            <strong>Reliable, fast, auditable data systems</strong>
+          </div>
+          <div class="metric-grid">
+            <div class="metric-card">
+              <span>01</span>
+              <strong>Integrate</strong>
+              <p>Unify fragmented data sources into clean, usable pipelines.</p>
+            </div>
+            <div class="metric-card">
+              <span>02</span>
+              <strong>Optimize</strong>
+              <p>Improve query performance, compute cost, and system throughput.</p>
+            </div>
+            <div class="metric-card">
+              <span>03</span>
+              <strong>Monitor</strong>
+              <p>Surface data freshness, quality, failures, and SLA risks early.</p>
+            </div>
+            <div class="metric-card">
+              <span>04</span>
+              <strong>Scale</strong>
+              <p>Design platforms that hold up as data volume and complexity grow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="services" aria-labelledby="services-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Senior data help without the overhead of building a full internal team.</h2>
+          <p>We focus on practical, high-impact engineering work: the kind that removes bottlenecks, makes reporting trustworthy, and keeps business-critical systems moving.</p>
+        </div>
+
+        <div class="card-grid four-columns">
+          <article class="service-card">
+            <div class="icon-wrap">↔</div>
+            <h3>Data Integration</h3>
+            <p>Connect disparate systems, reconcile information silos, and create reliable data flows from source systems into analytics platforms.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-wrap">▦</div>
+            <h3>Modeling and Architecture</h3>
+            <p>Design scalable warehouse models, dimensional structures, and platform patterns for high-volume, business-critical analytics.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-wrap">⚡</div>
+            <h3>Performance Optimization</h3>
+            <p>Tune SQL, reduce compute waste, improve load patterns, and eliminate slow-running queries that hold teams back.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon-wrap">◌</div>
+            <h3>Administration and Support</h3>
+            <p>Keep platforms healthy with proactive monitoring, operational runbooks, issue triage, and senior-level technical support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="outcomes" aria-labelledby="outcomes-title">
+      <div class="shell split-grid">
+        <div>
+          <p class="eyebrow">Why Data-Zen</p>
+          <h2 id="outcomes-title">Built for teams that need answers, not excuses.</h2>
+          <p class="section-intro">Data platforms usually fail in the seams: hidden data quality issues, slow jobs, unclear ownership, brittle pipelines, and runaway compute. We make the seams visible, measurable, and fixable.</p>
+          <a class="inline-link" href="#contact">Talk through your current data problem</a>
+        </div>
+
+        <div class="outcome-list">
+          <div class="outcome-item">
+            <span>01</span>
+            <div>
+              <h3>Deep technical ownership</h3>
+              <p>Senior engineers who can trace issues from raw source data through transformation, loading, reporting, and production operations.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span>02</span>
+            <div>
+              <h3>Fast diagnosis</h3>
+              <p>We look for the actual failure point: permissions, caching, orchestration, data shape, SQL logic, rendering, or infrastructure.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span>03</span>
+            <div>
+              <h3>Clear delivery</h3>
+              <p>Practical implementation, direct communication, and systems that are documented well enough for your team to operate.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span>04</span>
+            <div>
+              <h3>Cost-aware engineering</h3>
+              <p>Performance work is not just about speed. It is also about lowering waste, simplifying operations, and reducing recurring cost.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="technology" aria-labelledby="technology-title">
+      <div class="shell technology-grid">
+        <div>
+          <p class="eyebrow eyebrow-on-dark">Technology</p>
+          <h2 id="technology-title">Modern data systems need monitoring, observability, and discipline.</h2>
+          <p>We help teams build data platforms that are measurable from end to end, with clear checks for freshness, accuracy, failures, and performance drift.</p>
+        </div>
+
+        <div class="tech-panel">
+          <div class="tech-stat">
+            <strong>24/7</strong>
+            <span>monitoring mindset</span>
+          </div>
+          <div class="tech-stat">
+            <strong>SQL-first</strong>
+            <span>clear, inspectable logic</span>
+          </div>
+          <div class="tech-stat">
+            <strong>Cloud-ready</strong>
+            <span>Snowflake, Azure, and modern ELT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell stack-list" aria-label="Representative technology stack">
+        <span>Snowflake</span>
+        <span>SQL Server</span>
+        <span>Azure</span>
+        <span>Python</span>
+        <span>Streamlit</span>
+        <span>Fivetran</span>
+        <span>BCP</span>
+        <span>Power BI</span>
+        <span>Data Quality</span>
+        <span>SCD2</span>
+      </div>
+    </section>
+
+    <section class="section section-light" id="engagements" aria-labelledby="engagements-title">
+      <div class="shell">
+        <div class="section-heading compact">
+          <p class="eyebrow">Engagements</p>
+          <h2 id="engagements-title">Flexible help for the work that matters most.</h2>
+        </div>
+
+        <div class="card-grid three-columns">
+          <article class="plan-card">
+            <p class="plan-kicker">Operational support</p>
+            <h3>Remote Administration</h3>
+            <p>Ongoing support for data platforms, production processes, monitoring, troubleshooting, and performance stability.</p>
+            <ul>
+              <li>Platform health checks</li>
+              <li>Runbook-driven support</li>
+              <li>Failure triage and resolution</li>
+            </ul>
+          </article>
+
+          <article class="plan-card featured-card">
+            <p class="plan-kicker">Most common</p>
+            <h3>Data Engineering Services</h3>
+            <p>Senior engineering capacity for pipelines, replication, modeling, SQL tuning, automation, data quality, and analytics enablement.</p>
+            <ul>
+              <li>Pipeline and warehouse builds</li>
+              <li>Replication and SCD frameworks</li>
+              <li>Performance and cost optimization</li>
+            </ul>
+          </article>
+
+          <article class="plan-card">
+            <p class="plan-kicker">Team extension</p>
+            <h3>Technology Team Augmentation</h3>
+            <p>Specialized engineering support for teams that need senior execution without adding permanent headcount.</p>
+            <ul>
+              <li>Architecture reviews</li>
+              <li>Implementation support</li>
+              <li>Executive-level technical guidance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Bring us the messy data problem.</h2>
+          <p class="section-intro">Tell us what is slow, broken, unreliable, expensive, or hard to explain. We will help you figure out the cleanest path forward.</p>
+          <div class="contact-methods">
+            <a href="mailto:information@data-zen.com?subject=Data-Zen%20consultation%20request">information@data-zen.com</a>
+            <a href="https://www.linkedin.com/in/paulkats" rel="noopener noreferrer" target="_blank">Connect on LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form" data-contact-form>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">What can we help with?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Create email</button>
+          <p class="form-note">This opens your email client with the message pre-filled. No server-side form service is required.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top" aria-label="Data-Zen home">
+          <img src="assets/logo.svg" alt="" width="36" height="36">
+          <span>Data-Zen</span>
+        </a>
+        <p>Data engineering and technology consulting for complex, high-value systems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#technology">Technology</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© <span data-year></span> Data-Zen. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Data-Zen</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="section hero">
+    <div class="shell">
+      <p class="eyebrow">404</p>
+      <h1>Page not found.</h1>
+      <p class="hero-text">The page you requested does not exist. Return to the Data-Zen homepage to continue.</p>
+      <a class="button button-primary" href="/">Go home</a>
+    </div>
+  </main>
+</body>
+</html>
