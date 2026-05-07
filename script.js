@@ -1,11 +1,11 @@
 (function () {
   'use strict';
 
-  // ── Copyright year ────────────────────────────────────────
+  // -- Copyright year ----------------------------------------
   const yearEl = document.querySelector('[data-year]');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ── Mobile nav ────────────────────────────────────────────
+  // -- Mobile nav --------------------------------------------
   const navToggle = document.querySelector('[data-nav-toggle]');
   const navLinks  = document.querySelector('[data-nav-links]');
 
@@ -27,7 +27,7 @@
     });
   }
 
-  // ── Header scroll state ───────────────────────────────────
+  // -- Header scroll state -----------------------------------
   const header = document.querySelector('[data-header]');
   if (header) {
     window.addEventListener('scroll', () => {
@@ -35,7 +35,7 @@
     }, { passive: true });
   }
 
-  // ── Active nav link tracking ──────────────────────────────
+  // -- Active nav link tracking ------------------------------
   const sections = Array.from(document.querySelectorAll('main section[id]'));
   const links    = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
 
@@ -58,14 +58,15 @@
     sections.forEach(s => navObserver.observe(s));
   }
 
-  // ── Scroll reveal with per-group stagger ─────────────────
-  if ('IntersectionObserver' in window) {
+  // -- Scroll reveal with per-group stagger -------------------------------
+  const revealEls = Array.from(document.querySelectorAll('.reveal'));
+  if ('IntersectionObserver' in window && revealEls.length) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         const el = entry.target;
-        // Stagger only direct .reveal siblings in the same parent
-        const siblings = Array.from(el.parentElement.querySelectorAll(':scope > .reveal'));
+        const parent = el.parentElement;
+        const siblings = parent ? Array.from(parent.querySelectorAll(':scope > .reveal')) : [];
         const idx = siblings.indexOf(el);
         el.style.transitionDelay = idx > 0 ? (idx * 70) + 'ms' : '0ms';
         el.classList.add('visible');
@@ -76,14 +77,22 @@
       rootMargin: '0px 0px -36px 0px'
     });
 
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    revealEls.forEach(el => revealObserver.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('visible'));
   }
 
-  // ── Contact form → mailto ─────────────────────────────────
+  // -- Contact form to mailto ---------------------------------------------
   const form = document.querySelector('[data-contact-form]');
-  if (form) {
+  if (form instanceof HTMLFormElement) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
       const fd      = new FormData(form);
       const name    = String(fd.get('name')    || '').trim();
       const company = String(fd.get('company') || '').trim();

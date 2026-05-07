@@ -1,30 +1,53 @@
-# Data-Zen Website, GitHub Pages Flat Upload Package
+# Data-Zen Website v7
 
-This package is intentionally flat, with no `assets/` folder, to make browser upload into GitHub simpler.
+This package is a static GitHub Pages-ready website for Data-Zen.
 
-Upload these files directly into the root of the `data-zen-site` repository:
+## GitHub upload instructions
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `404.html`
-- `robots.txt`
-- `sitemap.xml`
-- `.nojekyll`
-- `logo.svg`
-- `favicon.svg`
-- `social-card.svg`
+Upload the files in this folder directly to the root of the `data-zen-site` repository.
 
-Do not upload the parent folder itself.
+The repository root should look like this:
 
-GitHub Pages settings:
+```text
+index.html
+styles.css
+script.js
+404.html
+robots.txt
+sitemap.xml
+.nojekyll
+logo.svg
+favicon.svg
+social-card.svg
+social-card.png
+```
 
-- Source: Deploy from a branch
-- Branch: `main`
-- Folder: `/root`
+Do not upload a parent folder that contains these files. `index.html` must be directly visible in the repository root.
 
-Test this first:
+## GitHub Pages settings
 
-`https://data-zen.github.io/data-zen-site/`
+In the repository, go to:
 
-Only after the GitHub Pages test URL looks correct should you add `data-zen.com` as a custom domain and change DNS.
+```text
+Settings > Pages
+```
+
+Use:
+
+```text
+Source: Deploy from a branch
+Branch: main
+Folder: /root
+```
+
+Commit the files, wait for the GitHub Pages deployment to finish, then test:
+
+```text
+https://data-zen.github.io/data-zen-site/
+```
+
+Only point `data-zen.com` to GitHub after the staging URL looks correct.
+
+## Production domain notes
+
+When you are ready to go live, add `data-zen.com` as the custom domain in GitHub Pages first, then update DNS. Do not delete email-related DNS records such as MX, SPF, DKIM, DMARC, or other TXT records.

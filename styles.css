@@ -2,7 +2,7 @@
    DATA-ZEN · styles.css · v5
    ============================================================ */
 
-/* ── Design tokens ────────────────────────────────────────── */
+/* -- Design tokens ------------------------------------------ */
 :root {
   --night:       #050d1c;
   --dusk:        #0b1729;
@@ -27,7 +27,7 @@
   --shell: 1160px;
 }
 
-/* ── Reset ────────────────────────────────────────────────── */
+/* -- Reset -------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -45,7 +45,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 h1, h2, h3, p { margin-top: 0; }
 
-/* ── Typography ───────────────────────────────────────────── */
+/* -- Typography --------------------------------------------- */
 h1, h2, h3, .brand span {
   font-family: 'Bricolage Grotesque', ui-sans-serif, sans-serif;
   font-weight: 700;
@@ -87,7 +87,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* ── Layout utils ─────────────────────────────────────────── */
+/* -- Layout utils ------------------------------------------- */
 .shell {
   width: min(var(--shell), calc(100% - 44px));
   margin-inline: auto;
@@ -106,15 +106,21 @@ h3 {
 }
 .skip-link:focus { top: 16px; }
 
-/* ── Scroll reveal ────────────────────────────────────────── */
+/* -- Scroll reveal ---------------------------------------------------------
+   Default state stays visible so the site remains readable if JavaScript fails.
+   JavaScript adds the .js class early, then reveal animations are enabled. */
 .reveal {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.reveal.visible { opacity: 1; transform: none; }
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.js .reveal.visible { opacity: 1; transform: none; }
 
-/* ── Navigation ───────────────────────────────────────────── */
+/* -- Navigation --------------------------------------------- */
 .site-header {
   position: sticky; top: 0; z-index: 80;
   background: rgba(5, 13, 28, 0.78);
@@ -183,7 +189,7 @@ h3 {
   transition: transform .2s ease, opacity .2s ease;
 }
 
-/* ── Section base ─────────────────────────────────────────── */
+/* -- Section base ------------------------------------------- */
 .section { padding: 104px 0; background: var(--paper); }
 .section-dark { background: var(--night); color: var(--inv); }
 
@@ -208,7 +214,7 @@ h3 {
 }
 .section-desc-inv { color: var(--inv-muted); }
 
-/* ── Buttons ──────────────────────────────────────────────── */
+/* -- Buttons ------------------------------------------------ */
 .btn {
   display: inline-flex;
   align-items: center;
