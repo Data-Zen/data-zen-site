@@ -1,12 +1,31 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#071425"/>
-  <circle cx="1040" cy="80" r="260" fill="#18B6A8" fill-opacity="0.18"/>
-  <circle cx="120" cy="610" r="320" fill="#60A5FA" fill-opacity="0.10"/>
-  <rect x="92" y="94" width="104" height="104" rx="26" fill="#102033" stroke="#1F334C"/>
-  <path d="M117 128H170L122 169H178" stroke="#F6FBFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="170" cy="128" r="6" fill="#18B6A8"/>
-  <text x="92" y="282" fill="#F6FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Data-Zen</text>
-  <text x="92" y="366" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Complex data problems, solved with</text>
-  <text x="92" y="424" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">senior engineering precision.</text>
-  <text x="92" y="520" fill="#75F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Snowflake • SQL Server • Azure • Replication • Performance</text>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1a2738" stroke-width="0.6"/>
+    </pattern>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#16C4A7" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#16C4A7" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#16C4A7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0A1320"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.65"/>
+  <circle cx="980" cy="120" r="320" fill="url(#orb)"/>
+
+  <!-- Brand mark -->
+  <rect x="80" y="84" width="76" height="76" rx="18" fill="#16243A" stroke="#1F334C" stroke-width="1"/>
+  <path d="M99 110H140L102 142H143" stroke="#F6FBFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="140" cy="110" r="4" fill="#16C4A7"/>
+  <text x="172" y="135" fill="#F6FBFF" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="500" letter-spacing="-0.5">Data-Zen</text>
+
+  <!-- Headline -->
+  <text x="80" y="312" fill="#F6FBFF" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" letter-spacing="-1.5">Quietly engineered</text>
+  <text x="80" y="402" fill="#F6FBFF" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" letter-spacing="-1.5">data platforms,</text>
+  <text x="80" y="492" fill="#16C4A7" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="76" font-weight="400" letter-spacing="-1.5">built to be trusted.</text>
+
+  <!-- Tagline strip -->
+  <line x1="80" y1="538" x2="160" y2="538" stroke="#16C4A7" stroke-width="1.5"/>
+  <text x="80" y="572" fill="#93A1B6" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="0.5">Snowflake &#183; SQL Server &#183; dbt &#183; Fivetran &#183; Azure &#183; AI/ML</text>
 </svg>

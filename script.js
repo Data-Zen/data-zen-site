@@ -1,3 +1,6 @@
+/* ============================================================
+   DATA-ZEN · script.js · v7
+   ============================================================ */
 (function () {
   'use strict';
 
@@ -30,9 +33,9 @@
   // ── Header scroll state ───────────────────────────────────
   const header = document.querySelector('[data-header]');
   if (header) {
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('is-scrolled', window.scrollY > 10);
-    }, { passive: true });
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 10);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
   }
 
   // ── Active nav link tracking ──────────────────────────────
@@ -64,7 +67,6 @@
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         const el = entry.target;
-        // Stagger only direct .reveal siblings in the same parent
         const siblings = Array.from(el.parentElement.querySelectorAll(':scope > .reveal'));
         const idx = siblings.indexOf(el);
         el.style.transitionDelay = idx > 0 ? (idx * 70) + 'ms' : '0ms';
