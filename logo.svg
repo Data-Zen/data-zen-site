@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Data-Zen logo</title>
+  <desc id="desc">A geometric monogram mark for Data-Zen.</desc>
+  <rect width="128" height="128" rx="32" fill="#071425"/>
+  <path d="M28 78L50 50C55 44 63 44 68 50L100 90" stroke="#18B6A8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 39H92L36 89H98" stroke="#F6FBFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="92" cy="39" r="7" fill="#18B6A8"/>
+</svg>

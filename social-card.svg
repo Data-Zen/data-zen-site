@@ -1,8 +1,12 @@
-<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Data-Zen logo</title>
-  <desc id="desc">A geometric monogram mark for Data-Zen.</desc>
-  <rect width="128" height="128" rx="32" fill="#071425"/>
-  <path d="M28 78L50 50C55 44 63 44 68 50L100 90" stroke="#18B6A8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M31 39H92L36 89H98" stroke="#F6FBFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="92" cy="39" r="7" fill="#18B6A8"/>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#071425"/>
+  <circle cx="1040" cy="80" r="260" fill="#18B6A8" fill-opacity="0.18"/>
+  <circle cx="120" cy="610" r="320" fill="#60A5FA" fill-opacity="0.10"/>
+  <rect x="92" y="94" width="104" height="104" rx="26" fill="#102033" stroke="#1F334C"/>
+  <path d="M117 128H170L122 169H178" stroke="#F6FBFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="170" cy="128" r="6" fill="#18B6A8"/>
+  <text x="92" y="282" fill="#F6FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Data-Zen</text>
+  <text x="92" y="366" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Complex data problems, solved with</text>
+  <text x="92" y="424" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">senior engineering precision.</text>
+  <text x="92" y="520" fill="#75F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Snowflake • SQL Server • Azure • Replication • Performance</text>
 </svg>
