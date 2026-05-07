@@ -6,7 +6,7 @@
   <path d="M117 128H170L122 169H178" stroke="#F6FBFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="170" cy="128" r="6" fill="#18B6A8"/>
   <text x="92" y="282" fill="#F6FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Data-Zen</text>
-  <text x="92" y="366" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Snowflake and data engineering</text>
-  <text x="92" y="424" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">for platforms that have to be right.</text>
+  <text x="92" y="366" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Complex data problems, solved with</text>
+  <text x="92" y="424" fill="#D6E8F9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">senior engineering precision.</text>
   <text x="92" y="520" fill="#75F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Snowflake • SQL Server • Azure • Replication • Performance</text>
 </svg>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Data-Zen</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-page {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      background: var(--night); color: var(--inv);
+      text-align: center; padding: 40px 24px;
+    }
+    .error-num {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: clamp(7rem, 22vw, 14rem);
+      font-weight: 800; line-height: 1; letter-spacing: -0.08em;
+      color: var(--jade); margin-bottom: 16px;
+    }
+    .error-page h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); color: #fff; margin-bottom: 14px; }
+    .error-page p  { color: var(--inv-muted); max-width: 380px; margin-bottom: 36px; }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-num">404</div>
+    <h1>Page not found</h1>
+    <p>The page you are looking for does not exist or may have moved.</p>
+    <a href="/" class="btn btn-primary">Back to home</a>
+  </div>
+</body>
+</html>
